@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Google Forms TOC Extension",
+    "version": "1.0",
+    "description": "Adds a table of contents to Google Forms pages",
+    "permissions": ["activeTab"],
+    "content_scripts": [
+      {
+        "matches": ["https://docs.google.com/forms/*"],
+        "js": ["content.js"],
+        "css": ["styles.css"]
+      }
+    ],
+    "web_accessible_resources": [
+      {
+        "resources": ["modal.html"],
+        "matches": ["<all_urls>"]
+      }
+    ]
+  }

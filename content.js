@@ -30,7 +30,6 @@ function generateTableOfContents() {
         link.onclick = (e) => {
             e.preventDefault();
             formTitleElement.scrollIntoView({ behavior: 'smooth' });
-            toggleModal(); // Close the modal after clicking
         };
         listItem.appendChild(link);
         tocList.appendChild(listItem);
@@ -48,7 +47,6 @@ function generateTableOfContents() {
         link.onclick = (e) => {
             e.preventDefault();
             section.scrollIntoView({ behavior: 'smooth' });
-            toggleModal(); // Close the modal after clicking
         };
         listItem.appendChild(link);
         tocList.appendChild(listItem);
